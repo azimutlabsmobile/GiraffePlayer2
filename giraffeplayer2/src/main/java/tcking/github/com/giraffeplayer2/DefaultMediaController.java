@@ -241,10 +241,6 @@ public class DefaultMediaController extends BaseMediaController {
 //                videoView.seekTo(0);
 //                videoView.start();
 //                doPauseResume();
-            } else if (v.getId() == R.id.app_video_finish) {
-                if (!player.onBackPressed()) {
-                    ((Activity) videoView.getContext()).finish();
-                }
             } else if (v.getId() == R.id.app_video_float_close) {
                 player.stop();
                 player.setDisplayModel(GiraffePlayer.DISPLAY_NORMAL);
@@ -272,7 +268,6 @@ public class DefaultMediaController extends BaseMediaController {
         seekBar.setOnSeekBarChangeListener(seekListener);
         $.id(R.id.app_video_play).clicked(onClickListener).imageView().setRotation(isRtl()?180:0);
         $.id(R.id.app_video_fullscreen).clicked(onClickListener);
-        $.id(R.id.app_video_finish).clicked(onClickListener).imageView().setRotation(isRtl()?180:0);
         $.id(R.id.app_video_replay_icon).clicked(onClickListener).imageView().setRotation(isRtl()?180:0);
         $.id(R.id.app_video_clarity).clicked(onClickListener);
         $.id(R.id.app_video_float_close).clicked(onClickListener);

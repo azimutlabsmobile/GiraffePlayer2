@@ -263,13 +263,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/app_video_finish"
-            android:layout_centerVertical="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_chevron_left_white_36dp"/>
-
         <TextView
             android:layout_centerInParent="true"
             android:id="@+id/app_video_title"
@@ -304,4 +297,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"/>
+
 </RelativeLayout>
