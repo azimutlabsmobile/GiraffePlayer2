@@ -23,7 +23,7 @@ android {
 }
 
 ext {
-    libraryVersion = "1.0.2"
+    libraryVersion = "1.0.3"
 }
 
 dependencies {
@@ -39,4 +39,3 @@ dependencies {
         api "com.github.tcking:ijkplayer-armv7a:${ijkVersion}-full"
     }
 }
-apply from: new File(projectDir, "gradle-on-demand.gradle")
